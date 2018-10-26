@@ -24,7 +24,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   };
 };
 
-interface State = {
+interface State {
 
 }
 
