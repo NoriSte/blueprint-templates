@@ -1,5 +1,3 @@
-// eslint-disable
-
 import { AppState } from '@/data';
 import * as React from 'react';
 import { connect } from 'react-redux';
