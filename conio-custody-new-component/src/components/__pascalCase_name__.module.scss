@@ -1,0 +1,10 @@
+@import "./../../styles/variables";
+@import "./../../styles/common";
+@import "./../../styles/typography";
+@import "./../../styles/lists";
+@import "./../navigation/Navigation.module";
+
+.{{kebabCase name}}-root {
+  @include content-row();
+  background-color: lightgray;
+}

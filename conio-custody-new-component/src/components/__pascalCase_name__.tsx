@@ -2,6 +2,7 @@ import { AppState } from '@/data';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
+import styles from "./{{pascalCase name}}.module.scss";
 
 
 interface Props {
@@ -34,7 +35,7 @@ class {{pascalCase name}} extends React.PureComponent<Props, State> {
   */
 
   public render() {
-    return <div>{JSON.stringify(this.props, null, 2)}</div>;
+    return <div className={styles["{{kebabCase name}}-root"]}>{JSON.stringify(this.props, null, 2)}</div>;
   }
 }
 
