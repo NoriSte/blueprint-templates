@@ -27,7 +27,7 @@ interface State {
 
 }
 
-class {{pascalCase name}} extends React.PureComponent<Props, State> {
+class {{pascalCase name}}Component extends React.PureComponent<Props, State> {
   /*
   public  static getDerivedStateFromProps(nextProps: Props, prevState: State) {
 
@@ -39,5 +39,5 @@ class {{pascalCase name}} extends React.PureComponent<Props, State> {
   }
 }
 
-// export default {{pascalCase name}};
-export default connect(mapStateToProps, mapDispatchToProps)({{pascalCase name}});
+// export default {{pascalCase name}}Component;
+export default connect(mapStateToProps, mapDispatchToProps)({{pascalCase name}}Component);
