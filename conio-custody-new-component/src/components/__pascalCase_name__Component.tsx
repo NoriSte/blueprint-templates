@@ -28,6 +28,8 @@ interface State {
 }
 
 class {{pascalCase name}}Component extends React.PureComponent<Props, State> {
+  public state = initialState;
+
   public render() {
     return <div className={styles["{{kebabCase name}}-root"]}>{JSON.stringify(this.props, null, 2)}</div>;
   }
