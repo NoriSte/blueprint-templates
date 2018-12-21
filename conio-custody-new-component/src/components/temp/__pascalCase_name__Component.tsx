@@ -6,24 +6,27 @@ import styles from "./{{pascalCase name}}.module.scss";
 
 
 interface Props {
-  aSimpleProp?: string,
-  aCallbackProp?: (data:{}) => void
+  label?: string,
+  version?: string,
+  aCallbackProp?: () => void
 };
 
 function mapStateToProps(state: AppState) {
   return {
-    // token: state.auth.token,
+    version: state.version.version,
   };
 }
 
 const mapDispatchToProps = (dispatch: Dispatch) => {
   return {
-    // both for sync or async action creators
-    // loadList: (params?:{}) => dispatch(actionName(params)),
+    aCallbackProp: () => dispatch({type:"TODO:"}),
   };
 };
 
 interface State {
+
+}
+const initialState:State = {
 
 }
 
