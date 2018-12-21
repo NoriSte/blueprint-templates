@@ -1,5 +1,6 @@
 import { AppState } from '@/data';
 import * as React from 'react';
+import * as PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import styles from "./{{pascalCase name}}.module.scss";
@@ -31,6 +32,14 @@ const initialState:State = {
 }
 
 class {{pascalCase name}}Component extends React.PureComponent<Props, State> {
+  public static propTypes = {
+    version: PropTypes.string
+  };
+
+  public static defaultProps = {
+    version: ''
+  };
+
   public state = initialState;
 
   public render() {
