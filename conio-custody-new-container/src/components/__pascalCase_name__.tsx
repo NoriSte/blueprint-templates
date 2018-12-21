@@ -9,7 +9,7 @@ export interface ComponentProps {}
 interface State {}
 const initialState: State = {};
 
-class {{pascalCase name}}Component extends React.PureComponent<Props, State> {
+class {{pascalCase name}} extends React.PureComponent<Props, State> {
   constructor(props: Props) {
     super(props);
     // this.handleClick = this.handleClick.bind(this);
@@ -21,4 +21,4 @@ class {{pascalCase name}}Component extends React.PureComponent<Props, State> {
   }
 }
 
-export default {{pascalCase name}}Component;
+export default {{pascalCase name}};

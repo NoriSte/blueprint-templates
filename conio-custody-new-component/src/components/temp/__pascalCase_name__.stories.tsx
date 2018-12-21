@@ -1,7 +1,7 @@
 import { wInfo } from "@/stories/utils";
 import { storiesOf } from "@storybook/react";
 import React from "react";
-import {{pascalCase name}}Component from "./{{pascalCase name}}Component";
+import {{pascalCase name}} from "./{{pascalCase name}}";
 
 storiesOf("{{pascalCase name}}", module)
   .addWithJSX(
@@ -15,17 +15,17 @@ storiesOf("{{pascalCase name}}", module)
   ### Usage
   ~~~js
   TODO: Report the most common uses
-  <{{pascalCase name}}Component>Authorize</{{pascalCase name}}Component>
+  <{{pascalCase name}}>Authorize</{{pascalCase name}}>
 
   TODO:
-  <{{pascalCase name}}Component label="conio">Children</{{pascalCase name}}Component>
+  <{{pascalCase name}} label="conio">Children</{{pascalCase name}}>
   ~~~`)(() => (
       <div>
         <span>Not received HSM</span>
-        <{{pascalCase name}}Component>Label</{{pascalCase name}}Component>
+        <{{pascalCase name}}>Label</{{pascalCase name}}>
 
         <span>Not received HSM</span>
-        <{{pascalCase name}}Component label="conio">Children</{{pascalCase name}}Component>
+        <{{pascalCase name}} label="conio">Children</{{pascalCase name}}>
       </div>
     ))
   )
@@ -40,17 +40,17 @@ storiesOf("{{pascalCase name}}", module)
   ### Usage
   ~~~js
   TODO: Report the most common uses
-  <{{pascalCase name}}Component>Authorize</{{pascalCase name}}Component>
+  <{{pascalCase name}}>Authorize</{{pascalCase name}}>
 
   TODO:
-  <{{pascalCase name}}Component label="conio">Children</{{pascalCase name}}Component>
+  <{{pascalCase name}} label="conio">Children</{{pascalCase name}}>
   ~~~`)(() => (
       <div>
         <span>Not received HSM</span>
-        <{{pascalCase name}}Component>Label</{{pascalCase name}}Component>
+        <{{pascalCase name}}>Label</{{pascalCase name}}>
 
         <span>Not received HSM</span>
-        <{{pascalCase name}}Component label="conio">Children</{{pascalCase name}}Component>
+        <{{pascalCase name}} label="conio">Children</{{pascalCase name}}>
       </div>
     ))
   );

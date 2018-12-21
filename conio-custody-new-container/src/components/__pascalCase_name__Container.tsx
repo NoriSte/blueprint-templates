@@ -1,7 +1,7 @@
 import { AppState } from "@/data";
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
-import {{pascalCase name}}Component, { ComponentProps } from "./{{pascalCase name}}Component";
+import {{pascalCase name}}, { ComponentProps } from "./{{pascalCase name}}";
 import { Props } from './{{pascalCase name}}Container';
 
 
@@ -51,5 +51,5 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps,
   mergeProps
-)({{pascalCase name}}Component);
+)({{pascalCase name}});
 
