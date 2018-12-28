@@ -33,11 +33,25 @@ const initialState:State = {
 
 class {{pascalCase name}} extends React.PureComponent<Props, State> {
   public static propTypes = {
-    version: PropTypes.string
+    /**
+     * Description
+     */
+    label: PropTypes.string,
+    /**
+     * Description
+     */
+    version: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    /**
+     * Description
+     */
+    aCallbackProp: PropTypes.func
+    // aCallbackProp: requiredIf(PropTypes.number.isRequired, (props: Props) => !!props.label)
   };
 
   public static defaultProps = {
-    version: ''
+    label: '',
+    version: '0.0.0',
+    aCallbackProp: null,
   };
 
   public state = initialState;
