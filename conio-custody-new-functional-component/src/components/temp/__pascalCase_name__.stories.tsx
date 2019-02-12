@@ -1,6 +1,6 @@
 import { wInfo } from "@/stories/utils";
 import { storiesOf } from "@storybook/react";
-import React from "react";
+import * as React from "react";
 import {{pascalCase name}} from "./{{pascalCase name}}";
 
 storiesOf("{{pascalCase name}}", module)
