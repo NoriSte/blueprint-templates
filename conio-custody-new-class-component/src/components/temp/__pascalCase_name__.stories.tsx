@@ -31,20 +31,7 @@ storiesOf("{{pascalCase name}}", module)
   )
   .addWithJSX(
     "all cases",
-    wInfo(`
-
-  ### Notes
-
-  TODO: component description
-
-  ### Usage
-  ~~~js
-  TODO: Report the most common uses
-  <{{pascalCase name}}>Authorize</{{pascalCase name}}>
-
-  TODO:
-  <{{pascalCase name}} label="conio">Children</{{pascalCase name}}>
-  ~~~`)(() => (
+    (() => (
       <div>
         <span>Not received HSM</span>
         <{{pascalCase name}}>Label</{{pascalCase name}}>
