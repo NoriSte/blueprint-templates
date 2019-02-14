@@ -1,4 +1,5 @@
 import { wInfo } from "@/stories/utils";
+import { boolean } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import {{pascalCase name}} from "./{{pascalCase name}}";
@@ -12,6 +13,10 @@ storiesOf("{{pascalCase name}}", module)
 
   TODO: component description
 
+  Remember that:
+  - TODO: ...
+  - TODO: ...
+
   ### Usage
   ~~~js
   TODO: Report the most common uses
@@ -20,24 +25,26 @@ storiesOf("{{pascalCase name}}", module)
   TODO:
   <{{pascalCase name}} label="conio">Children</{{pascalCase name}}>
   ~~~`)(() => (
-      <div>
-        <span>Not received HSM</span>
-        <{{pascalCase name}}>Label</{{pascalCase name}}>
-
-        <span>Not received HSM</span>
-        <{{pascalCase name}} label="conio">Children</{{pascalCase name}}>
-      </div>
+      <{{pascalCase name}} />
     ))
   )
   .addWithJSX(
     "all cases",
     (() => (
-      <div>
-        <span>Not received HSM</span>
-        <{{pascalCase name}}>Label</{{pascalCase name}}>
+       <div>
+        <h3>With...</h3>
+        <{{pascalCase name}} />
+        <br />
 
-        <span>Not received HSM</span>
-        <{{pascalCase name}} label="conio">Children</{{pascalCase name}}>
+        <h3>With...</h3>
+        <{{pascalCase name}} />
+        <br />
       </div>
+    ))
+  )
+  .addWithJSX(
+    "playground",
+    (() => (
+       <{{pascalCase name}} data={boolean("DATA_NAME", false)} />
     ))
   );

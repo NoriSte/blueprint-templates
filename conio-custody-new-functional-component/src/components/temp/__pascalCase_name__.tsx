@@ -5,6 +5,9 @@ import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import styles from "./{{pascalCase name}}.module.scss";
 
+// Remember to
+// TODO: compile the stories
+// TODO: add the callback tests
 
 interface Props {
   label?: string,
