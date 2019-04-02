@@ -1,8 +1,8 @@
 @import "./../../styles/variables";
 @import "./../../styles/common";
 @import "./../../styles/typography";
+@import "./../../styles/lists";
 
 .{{kebabCase name}}-root {
-  @include content-row();
-  background-color: lightgray;
+  // 
 }

@@ -1,13 +1,24 @@
-import { wInfo } from "@/stories/utils";
+import { wInfoStyle } from "@/stories/utils";
+import { withInfo } from "@storybook/addon-info";
 import { boolean } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import {{pascalCase name}} from "./{{pascalCase name}}";
 
 storiesOf("{{pascalCase name}}", module)
-  .addWithJSX(
+  .addDecorator(withInfo)
+  .add(
     "default",
-    wInfo(`
+    () => (
+      <{{pascalCase name}} />
+    ),
+    {
+      info: {
+        inline: true,
+        propTablesExclude: [], // these components will be excluded from the propTypes table
+        source: true,
+        styles: wInfoStyle,
+        text: `
 
   ### Notes
 
@@ -24,9 +35,7 @@ storiesOf("{{pascalCase name}}", module)
 
   TODO:
   <{{pascalCase name}} label="conio">Children</{{pascalCase name}}>
-  ~~~`)(() => (
-      <{{pascalCase name}} />
-    ))
+  ~~~`}}
   )
   .addWithJSX(
     "all cases",

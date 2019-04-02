@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styles from "./{{pascalCase name}}.module.scss";
 import * as PropTypes from "prop-types";
+import c from "classnames";
 
 
 // tslint:disable-next-line:no-empty-interface
@@ -32,7 +33,7 @@ class {{pascalCase name}} extends React.PureComponent<Props, State> {
   }
 
   public render() {
-    return <div className={styles["{{kebabCase name}}-root"]}>{JSON.stringify(this.props, null, 2)}</div>;
+    return <div className={c("{{kebabCase name}}-root", styles["{{kebabCase name}}-root"])}>{JSON.stringify(this.props, null, 2)}</div>;
   }
 }
 

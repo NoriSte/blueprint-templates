@@ -4,6 +4,5 @@
 @import "./../../styles/lists";
 
 .{{kebabCase name}}-root {
-  @include content-row();
-  background-color: lightgray;
+  // 
 }
