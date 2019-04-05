@@ -1,8 +1,5 @@
-import { AppState } from '@/data';
 import * as React from 'react';
 import * as PropTypes from "prop-types";
-import { connect } from 'react-redux';
-import { Dispatch } from 'redux';
 import styles from "./{{pascalCase name}}.module.scss";
 import c from "classnames";
 
@@ -17,7 +14,7 @@ interface Props {
 };
 
 const {{pascalCase name}} = (props: Props) => {
-  return <div className={c("{{kebabCase name}}-root", styles["{{kebabCase name}}-root"])}>{JSON.stringify(this.props, null, 2)}</div>;
+  return <div className={c("{{kebabCase name}}-root", styles["{{kebabCase name}}-root"])}>{JSON.stringify(props, null, 2)}</div>;
 };
 
 // @see https://reactjs.org/docs/typechecking-with-proptypes.html

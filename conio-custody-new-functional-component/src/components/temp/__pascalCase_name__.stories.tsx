@@ -1,6 +1,6 @@
 import { wInfoStyle } from "@/stories/utils";
 import { withInfo } from "@storybook/addon-info";
-import { boolean } from "@storybook/addon-knobs";
+import { text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import {{pascalCase name}} from "./{{pascalCase name}}";
@@ -54,6 +54,6 @@ storiesOf("{{pascalCase name}}", module)
   .addWithJSX(
     "playground",
     (() => (
-       <{{pascalCase name}} data={boolean("DATA_NAME", false)} />
+       <{{pascalCase name}} label={text("DATA_NAME", "example")} />
     ))
   );
