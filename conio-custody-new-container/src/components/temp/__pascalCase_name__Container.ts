@@ -1,4 +1,4 @@
-import { AppState } from "@/data";
+import { AppState } from "@/data/store";
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
 import {{pascalCase name}}, { ComponentProps } from "./{{pascalCase name}}";
