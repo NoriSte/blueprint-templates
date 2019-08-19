@@ -55,5 +55,7 @@ storiesOf("{{pascalCase name}}", module)
     "playground",
     (() => (
        <{{pascalCase name}} label={text("DATA_NAME", "example")} />
-    ))
+    )),
+    // @ts-ignore
+    { eyes: { include: false } }
   );
